@@ -1,0 +1,21 @@
+*{
+    margin: 0xp;
+    padding: 0px;
+}
+
+.boder{
+    border: 5px solid red;
+    margin: 30px auto;
+    padding: 2px;
+    width: 600px;
+}
+
+.boder .boder-inside{
+    border: 15px solid green;
+}
+
+h1{
+    height: 50px;
+    text-align: center;
+    margin: 20px auto;
+}

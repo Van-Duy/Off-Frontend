@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn Light</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/my-js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Đọc sách</h1>
+        </div>
+        <section>
+            <div class="box-title">
+                <div class="zoom">
+                    <div class="in-zoom" onclick="changeZoom('in-zoom')"><i class="fa fa-search-plus fa-lg"></i></div>
+                    <div class="un-zoom" onclick="changeZoom('un-zoom')"><i class="fa fa-search-minus fa-lg"></i></div>
+                </div>
+                <div class="backgroud">
+                    <div class="box-background active" onclick="changeBackground('white')" id="white">Trắng</div>
+                    <div class="box-background" onclick="changeBackground('black')" id="black">Đen</div>
+                    <div class="box-background" onclick="changeBackground('blue')" id="blue">Xanh</div>
+                    <div class="box-background" onclick="changeBackground('yellow')" id="yellow">vàng</div>
+                </div>
+                <div class="line">
+                    <select name="line" id="line-text" class="btn">
+                        <option value="default">Khoảng cách dòng</option>
+                        <option value="narrow">Hẹp</option>
+                        <option value="nomal">Bình thường</option>
+                        <option value="large">Rộng</option>
+                    </select>
+                </div>
+                <div class="aign">
+                    <select name="aign" id="aign" class="btn">
+                        <option value="default">Canh lề</option>
+                        <option value="left">Trái</option>
+                        <option value="center">Giữa</option>
+                        <option value="right">Phải</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-main">
+                <p id="text">Vận may không trọn
+                    Một bà lão sống trong túp lều trên bờ biển cùng với một chú chó.
+
+                    Hàng ngày, bà lững thững dắt chó dạo trên bãi biển, hưởng những ngày cuối đời một cách yên ả. Bỗng
+                    một hôm, trong khi đang tản bộ, bà vấp phải một cái lọ bị sóng đánh dạt vào bờ.
+
+                    Bà lão chà xát cái lọ và một làn khói tỏa ra rồi tụ lại thành một vị thần. Ông ta nói:
+
+                    – Cảm ơn bà đã cứu ta thoát khỏi chốn giam cầm này. Để đền ơn, ta sẽ ban cho bà 3 điều ước.
+
+                    Bà già không đắn đo suy nghĩ, đáp ngay:
+
+                    – Tôi muốn có 1 triệu đôla.
+
+                    Vị thần đưa tay lên làm phép và “Bụp!”, bà lão ngồi trên một đống tiền. Nhìn lại túp lều rách nát,
+                    bà đưa ra điều ước thứ hai:
+
+                    – Tôi muốn túp lều của mình trở thành một tòa lâu đài.
+
+                    Vị thần lại làm phép và ngay lập tức, túp lều trở thành một lâu đài với tòa ngang dẫy dọc nguy nga.
+
+                    Bà già sung sướng thốt lên:
+
+                    – Ôi! Thật là tuyệt diệu! Thế là mình cũng trở thành triệu phú vào cuối đời. À, mà cuối đời là thế
+                    nào nhỉ, ta còn một điều ước nữa cơ mà. Tôi muốn mình trở thành một thiếu phụ xinh đẹp và con chó
+                    của tôi biến thành một người chồng điển trai, cường tráng.
+
+                    Khi điều ước được thỏa nguyện, bà lão, lúc này đã trở thành thiếu phụ, cùng người chồng mang số tiền
+                    về tòa lâu đài. Đến giờ lên giường, bà nói với chồng:
+
+                    – Mình ơi! Hôm nay chúng mình sẽ có một đêm mặn nồng như ngày tân hôn, anh nhé!
+
+                    Người chồng xụ mặt rồi đay nghiến:
+
+                    – Bây giờ thì sướng nhé! Ai bảo năm ngoái bà đem tôi đi thiến?</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

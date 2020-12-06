@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Game</h1>
+        </div>
+        <div class="time-heart">
+            <div class="time"><p>Thời gian : </p> <div id="time">3:30</div></div>
+            <div class="heart">
+                <div class="text">Bạn đã tìm thấy : </div>
+                <div class="heart-1" id="heart-1"></div>
+                <div class="heart-2" id="heart-2"></div>
+                <div class="heart-3" id="heart-3"></div>
+            </div>
+        </div>
+        <div class="main">
+           <div class="box-win box-1" id="box-1"></div>
+           <div class="box-win box-2" id="box-2"></div>
+           <div class="box-win box-3" id="box-3"></div>
+           <div class="box-lose box-4" id="box-4"></div>
+        </div>
+        <div class="footer">
+            <button class="return" onclick="funPlayAgain()">Chơi lại</button>
+            <button class="start" id="start" onclick="funStart()">Bắt đầu</button>
+        </div>
+    </div>
+    <script src="js/define.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/my-js.js"></script>
+</body>
+</html>

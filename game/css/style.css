@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    margin-bottom: 30px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.main{
+    position: relative;
+    border: 3px solid black;
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+}
+
+.box-win{
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+   
+}
+.box-lose{
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    cursor: pointer;
+   
+}
+
+.box-1{
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    background-color: yellow;
+}
+
+.box-2{
+    top: 100px;
+    left: 200px;
+    z-index: 1;
+    background-color: aqua;
+}
+
+.box-3{
+    top: 180px;
+    left: 230px;
+    z-index: 1;
+    background-color: royalblue;
+}
+
+.box-4{
+    top: 70px;
+    left: 230px;
+    background-color: red;
+    transform: translate(0%);
+}
+
+.footer button{
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: yellow;
+}
+
+.time-heart{
+    margin: 0px auto;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+
+}
+
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart-1,.heart-2,.heart-3{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+#time{
+    margin-left: 10px;
+    color: red;
+    font-size: 20px;
+}

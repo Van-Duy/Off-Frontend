@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    margin-bottom: 30px;
+    color: red;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 200px;
+    margin: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    margin-bottom: 30px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.main{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 40px;
+    
+}
+
+.light .img img{
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+}

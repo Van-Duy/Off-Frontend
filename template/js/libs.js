@@ -16,8 +16,8 @@ loadStorage = () => {
     return JSON.parse(localStorage.getItem('LIST_TASK'));
 }
 
-listItems = (param = null) => {
-    let items = loadStorage();
-    if (items == null) items = [];
-    return items;
+
+
+notice = (massege,type) => {
+    $.notify({message: massege},{type: type});
 }

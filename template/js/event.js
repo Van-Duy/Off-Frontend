@@ -7,7 +7,8 @@ funCloseForm = () => {
 }
 
 funEdit = (id) => {
-    console.log(id)
+    let item = getItemInFrom(id);
+    showItemInForm(item);
 }
 
 funDelete = (id) => {
@@ -26,25 +27,39 @@ funDelete = (id) => {
         saveStorage(arr);
         let items = listItems();
         showItem(items);
+        notice('Đã xóa thành công','danger');
     }
    
 }
 
 funSubmitAdd = () => {
-    let id   = makeid(10);
     let task = elemInputName.value;
     let level = elemInputLevel.value;
-    if(task == ''){
-        alert('Name không được rỗng')
+    let id = elemInputID.value;
+
+    if(id){
+        editItem(id,task,level);
     }else{
-        let items = listItems();
-        items.push({'id':id,'name':task,'level':level});
-        saveStorage(items);
-        let itemsNew = listItems();
-        showItem(itemsNew);
-        elemInputName.value = '';
-        elemInputLevel.value = 'small';
-        funCloseForm();
+        if(task == ''){
+            alert('Name không được rỗng')
+        }else{
+            let itemsNew = addItems(task,level)
+            showItem(itemsNew);
+            setForm();
+            funCloseForm();
+            notice('Thêm mới thành công','info');
+        }
     }
 
+
+    
+
+}
+
+funSearch = () => {
+    let valueSearch = elemInputSearch.value;
+    let items = listItems({
+        search:valueSearch
+    });
+    showItem(items);
 }

@@ -19,7 +19,7 @@ showItem =(items) =>{
     if(items.length == 0) html = '';
     else{
         items.forEach((item,index) => {
-            //item.name = item.name.replace(new RegExp(search,'ig'),'<span class="hightlight">');
+            item.name = item.name.replace(new RegExp(search,'ig'),'<span class="hightlight">'+search+'</span>');
             html += `<tr>
                         <td class="text-center">`+ (index + 1) +`</td>
                         <td>` + item.name +`</td>

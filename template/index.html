@@ -36,7 +36,7 @@
 				<div class="input-group">
 					<input id="input-search" type="text" class="form-control" ref="search" placeholder="Search for..." />
 					<span class="input-group-btn">
-						<button  class="btn btn-info" type="button">Go!</button>
+						<button  class="btn btn-info" type="button" onclick="funSearch()">Go!</button>
 					</span>
 				</div>
 			</div>
@@ -84,7 +84,7 @@
 							<option value="medium">Medium</option>
 						</select>
 					</div>
-
+					<input id="input-id" type="hidden"  value=""/>
 					<button type="button" class="btn btn-primary" onclick="funSubmitAdd()">Submit</button>
 					<button type="button" class="btn btn-default" onclick="funCloseForm()">Cancel</button>
 				</form>
@@ -153,6 +153,7 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-notify.min.js"></script>
 	<script src="js/define.js"></script>
 	<script src="js/libs.js"></script>
 	<script src="js/model.js"></script>
